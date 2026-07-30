@@ -1,5 +1,189 @@
----
-layout: home
-title: My website
-subtitle: This is where I will tell my friends way too much about me
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premkumar — Python Backend Developer</title>
+<meta name="description" content="Portfolio of Prem Kumar, a Python backend developer specializing in FastAPI, PostgreSQL, Docker, and Linux infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="site-header" id="site-header">
+  <nav class="nav container">
+    <a href="#home" class="nav-logo">PREMKUMAR<span class="dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#clients">Client Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== HOME / HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Python &amp; FastAPI &middot; Backend Systems</p>
+        <h1 class="hero-title">
+          Hi, I'm <span id="heroName">Premkumar</span>
+        </h1>
+        <p class="hero-role" id="heroTitle">Python Backend Developer</p>
+        <p class="hero-tagline" id="heroTagline">
+          Building reliable applications using Python, FastAPI, PostgreSQL, Linux, Docker, and modern development tools.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#resume" class="btn btn-secondary" id="heroResumeBtn">Download Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal" aria-hidden="true">
+        <div class="glass-card stack-card">
+          <div class="stack-card-head">
+            <span class="stack-card-title">Backend Stack</span>
+            <span class="stack-card-count">10 tools</span>
+          </div>
+          <ul class="stack-grid">
+            <li><span class="stack-dot"></span><span class="stack-name">Python</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">FastAPI</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">PostgreSQL</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">SQLite</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">Docker</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">Debian Linux</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">Git</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">Jenkins</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">AWS</span></li>
+            <li><span class="stack-dot"></span><span class="stack-name">Kubernetes</span></li>
+
+          </ul>
+          <div class="stack-footer">
+            Focused on backend development, databases, APIs, and self-hosted infrastructure.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="eyebrow reveal">Selected Work</p>
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-subtitle reveal">A few things I've built and shipped on my own.</p>
+      <div class="grid projects-grid" id="projectsGrid">
+        <!-- injected by js/main.js from data/projects.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CLIENT WORK ===================== -->
+  <section id="clients" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow reveal">For Clients</p>
+      <h2 class="section-title reveal">Client Work</h2>
+      <p class="section-subtitle reveal">Backend systems delivered for real businesses.</p>
+      <div class="grid clients-grid" id="clientsGrid">
+        <!-- injected by js/main.js from data/clients.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="reveal">
+        <p class="eyebrow">Get to Know Me</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="glass-card about-card reveal" id="aboutCard">
+        <p id="aboutText">Loading…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME ===================== -->
+  <section id="resume" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow reveal">Skills &amp; Experience</p>
+      <h2 class="section-title reveal">Resume</h2>
+      <p class="section-subtitle reveal">Core tools I use to design, build, and ship backend systems.</p>
+
+      <div class="skills-grid">
+        <div class="glass-card skill-card reveal">
+          <h3>Backend</h3>
+          <ul>
+            <li>Python</li>
+            <li>FastAPI</li>
+          </ul>
+        </div>
+        <div class="glass-card skill-card reveal">
+          <h3>Database</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+        <div class="glass-card skill-card reveal">
+          <h3>DevOps</h3>
+          <ul>
+            <li>Docker</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+        <div class="glass-card skill-card reveal">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Gitea</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-cta reveal">
+        <a href="#" class="btn btn-primary" id="resumeDownloadBtn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <p class="eyebrow reveal">Let's Talk</p>
+      <h2 class="section-title reveal">Contact</h2>
+      <p class="section-subtitle reveal">Open to backend engineering roles and freelance projects.</p>
+
+      <div class="contact-grid" id="contactGrid">
+        <!-- injected by js/main.js from data/profile.json -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span id="footerName">Prem Kumar</span>
+    <span class="footer-sep">&middot;</span>
+    <span>&copy; <span id="footerYear"></span> All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

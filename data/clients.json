@@ -1,0 +1,8 @@
+[
+  {
+    "client": "Cobra Fitness, Ponapathangal",
+    "project": "Gym Manager Desktop",
+    "description": "A full-featured membership and billing platform for gym owners \u2014 tracks members, plans, and payments through a clean admin dashboard backed by a relational schema built for reporting.",
+    "technologies": ["Python", "Pyside6", "SQLite", "pyinstaller", "Inno setup"]
+  }
+]

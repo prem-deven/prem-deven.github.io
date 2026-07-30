@@ -1,0 +1,10 @@
+{
+  "name": "Premkumar",
+  "title": "Python Backend Developer",
+  "tagline": "Building reliable applications using Python, FastAPI, PostgreSQL, Linux, Docker, and modern development tools.",
+  "about": "I'm a backend developer who enjoys turning messy requirements into systems that stay boring in production. My work centers on Python and FastAPI, backed by PostgreSQL, containerized with Docker, and deployed on Linux infrastructure I manage end to end. I care about clean API design, sensible data models, and automation that removes repetitive work from the deployment pipeline. Outside of client projects, I run a home server lab to test the same tools I use professionally \u2014 reverse proxies, self-hosted Git, CI runners \u2014 before they ever reach production.",
+  "email": "premkumar.deven@gmail.com",
+  "github": "https://github.com/prem-deven",
+  "linkedin": "https://linkedin.com/in/premkumar-deven",
+  "resumeLink": "assets/premkumar.pdf"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Gym Management System",
+    "description": "A full-featured membership and billing platform for gym owners \u2014 tracks members, plans, and payments through a clean admin dashboard backed by a relational schema built for reporting.",
+    "technologies": ["Python", "Pyside6", "SQLite"],
+    "github": "https://github.com/prem-deven/gym-manager",
+    "image": ""
+  },
+  {
+    "title": "Debian Updater",
+    "description": "A simple, lightweight, and fast graphical application to keep your Debian system up-to-date — designed especially for beginners and users who prefer a GUI experience over the terminal.",
+    "technologies": ["Python","Bash","CustomTkinter"],
+    "github": "https://github.com/prem-deven/updater"
+  }
+]
